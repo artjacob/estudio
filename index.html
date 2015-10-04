@@ -9,29 +9,11 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#000">
 
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700">
 
-<style>
-body { margin: 15px; font: 14px "roboto mono", consolas, monospace; color: #333; }
-select { display: block; width: 100%; margin-bottom: 15px; }
-
-h1, h2 { margin: 0; }
-h1 { font-size: 24px; }
-h2 { font-weight: 400; font-size: 18px; color: #999; }
-
-pre { margin-top: 15px; font: inherit; line-height: 1.5; }
-pre em, pre b { font-style: normal; font-weight: 700; color: #fa0; }
-</style>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script>
-$(function() {
-	$("select").on("change", function() {
-		var song = $(this).val();
-		$(".cifra").load(song + ".html");
-	});
-});
-</script>
+<script src="js/estudio.js"></script>
 
 </head>
 
